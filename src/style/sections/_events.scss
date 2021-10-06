@@ -8,6 +8,28 @@
     padding-right: 5rem;
   }
 
+  .general {
+    background-color: $light-color;
+    border-radius: $br-radius;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-image: url('/assets/img/flowers-corner-br.png');
+    background-position: right bottom;
+    background-size: 20% auto;
+    background-repeat: no-repeat;
+    padding: 2rem;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
   background-color: $tertiary-accent-color;
   text-align: left;
 
