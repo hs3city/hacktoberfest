@@ -140,6 +140,9 @@
       .author {
         font-weight: $title-weight;
       }
+      summary {
+        cursor: pointer;
+      }
     }
   }
 
