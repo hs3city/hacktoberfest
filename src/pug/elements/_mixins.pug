@@ -38,8 +38,7 @@ mixin event(info, edges)
 
 
 
-mixin logo(url, name, alt, loading)
-  .logo-sm 
-    a(href=url, target="_blank")  
-      img(src="/assets/img/" + name, alt=alt, loading="lazy")
+mixin logo(url, name, alt, loading, className)  
+  a(href=url, target="_blank")  
+    img(src="/assets/img/" + name, alt=alt, loading="lazy")
 
