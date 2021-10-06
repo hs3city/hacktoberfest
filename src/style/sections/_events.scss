@@ -107,7 +107,7 @@
         margin-bottom: 0.3rem;
       }
       .where span {
-        background-color: $tertiary-color;
+        background-color: darken($secondary-color, 12);
       }
     }
     .bottom {
@@ -163,7 +163,7 @@
 }
 
 .online .where span {
-  background-color: $secondary-color !important;
+  background-color: $secondary-accent-color !important;
 }
 @media (min-width: $min-md) {
   article {
