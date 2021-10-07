@@ -7,26 +7,48 @@
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .top {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $min-lg) {
+      flex-direction: row;
+    }
+  }
+  .top__left {
+    flex: 1;
 
-  .general {
+    @media (min-width: $min-lg) {
+      margin-right: 1rem;
+    }
+  }
+
+  .top__right {
     background-color: $light-color;
     border-radius: $br-radius;
-    padding: 2rem;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 1rem;
     background-image: url('/assets/img/flowers-corner-br.png');
     background-position: right bottom;
     background-size: 20% auto;
     background-repeat: no-repeat;
-    padding: 2rem;
+    color: $tertiary-accent-color;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 1.5rem;
 
-    h3 {
-      font-size: 1.25rem;
+    @media (min-width: $min-lg) {
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+
+    .offline-info {
+      font-size: 1.1rem;
       font-weight: bold;
-      margin-bottom: 1rem;
+      line-height: 1.75;
     }
     p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
+      font-weight: 300;
+      font-size: 1rem;
     }
   }
 
@@ -91,14 +113,6 @@
       }
     }
   }
-
-  // .title {
-  //   color: white;
-  //   margin-left: 2rem;
-  //   @media (min-width: $min-md) {
-  //     margin-left: 0;
-  //   }
-  // }
 
   article {
     margin: 2rem;
