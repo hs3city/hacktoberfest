@@ -61,4 +61,17 @@
       }
     }
   }
+
+  .charity {
+    width: 50%;
+    margin: auto;
+
+    @media screen and (max-width: $max-sm){
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
 }
