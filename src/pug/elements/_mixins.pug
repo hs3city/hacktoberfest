@@ -31,15 +31,26 @@ mixin event(info, edges, data)
         if info.title === 'Hacktoberfest: wprowadzenie'       
           .top__right
           
-            h3.offline-info Wydarzenie offline będzie odbywało się w:
+            h3.offline-info To wydarzenie już się odbyło
               address
                 p Gdańskim Inkubatorze Przedsiębiorczości STARTER
                 p ul. Lęborska 3b
                 p 80-386 Gdańsk
               h4(style="font-size: 1.25rem; font-weight: bold")   
                 a(href="https://www.meetup.com/pl-PL/hs3city/events/281191703/") 
-                  button.btn-meetup Zapisy
-            
+                  button.btn-meetup Link
+
+        else if info.title === "Hacktoberfest: Hackathon"
+          .top__right 
+            h3.offline-info Wydarzenie offline będzie odbywało się w: 
+              address 
+                p Gdańskim Parku Naukowo-Technologicznym 
+                p Budynek C sala ABC
+                p ul. Trzy Lipy 3
+                p 80-172 Gdańsk 
+              h4(style="font-size: 1.25rem; font-weight: bold")
+                a(href="https://www.meetup.com/pl-PL/hs3city/events/281358969/")
+                  button.btn-meetup Zapisy           
 
       if block
         details.bottom 
