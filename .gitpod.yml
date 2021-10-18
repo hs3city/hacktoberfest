@@ -5,5 +5,7 @@ ports:
     
 tasks:
   - name: server
+    init: |
+      npm ci
     command: |
       npm run serve
