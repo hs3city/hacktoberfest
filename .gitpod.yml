@@ -1,0 +1,9 @@
+ports:
+  - port: 1234
+    onOpen: open-browser
+    visibility: public
+    
+tasks:
+  - name: server
+    command: |
+      npm run serve
