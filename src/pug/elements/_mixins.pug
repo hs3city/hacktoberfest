@@ -27,7 +27,7 @@ mixin event(info, edges, data)
           h4.hours O której: 
             span #{info.hours}
           h4.where Gdzie: 
-            span #{info.online ? 'Online' : 'Offline + streaming'}
+            span #{info.online ? 'Online' : info.streaming ? 'Offline + streaming' : 'Offline'}
         if info.title === 'Hacktoberfest: wprowadzenie'       
           .top__right
           
